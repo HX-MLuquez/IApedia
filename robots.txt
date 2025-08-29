@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /private/
 Allow: /
 
-Sitemap: https://www.example.com/sitemap.xml
+Sitemap: https://iapedia.netlify.app/sitemap.xml
