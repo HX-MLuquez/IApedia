@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Guía interactiva sobre las IAs más relevantes de 2025" />
+    <meta
+      name="description"
+      content="Guía interactiva sobre las IAs más relevantes de 2025"
+    />
     <link rel="icon" type="image/x-icon" href="public/iafav.ico" />
     <meta name="author" content="Mauricio Gastón Lúquez" />
-    <meta name="keywords" content="IA, IApedia, Inteligencia Artificial, Herramientas de IA, GPT-4, DALL-E, Midjourney, LLM, Modelos de Lenguaje, Generative AI" />
+    <meta
+      name="keywords"
+      content="IA, IApedia, Inteligencia Artificial, Herramientas de IA, GPT-4, DALL-E, Midjourney, LLM, Modelos de Lenguaje, Generative AI"
+    />
     <title>IApedia 2025 - Guía Interactiva</title>
     <style>
       * {
@@ -90,13 +96,23 @@
       }
 
       .header h1 {
-        font-size: 3.5rem;
-        font-weight: 800;
+        font-size: 4rem;
+        font-weight: 700;
         color: #ffd700;
         margin-bottom: 10px;
         text-shadow: 0 4px 20px rgba(0, 0, 0, 0.071);
         animation: slideInDown 1s ease-out;
       }
+
+      .header h1 .year {
+        font-size: 1.5rem; /* más pequeño */
+        font-weight: 300; /* más fino */
+        color: #ffffffcc; /* blanco suave */
+        margin-left: 8px; /* un poco de espacio */
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        letter-spacing: 2px;
+      }
+
       .header img {
         animation: slideInDown 1s ease-out;
       }
@@ -107,6 +123,7 @@
         margin-bottom: 20px;
         animation: slideInUp 1s ease-out 0.2s both;
       }
+
       .header-content {
         display: flex;
         flex-direction: column;
@@ -524,22 +541,21 @@
         <img
           src="public/ialog.png"
           alt="IApedia 2025 Logo"
-          style="width: 90px; height: 90px; margin-bottom: 10px"
+          style="width: 80px; height: 80px; margin-bottom: 10px"
         />
         <div class="header-content">
-            <h1>IApedia 2025</h1>
-        <p>
-          Explora las herramientas de inteligencia artificial más innovadoras
-        </p> 
+          <h1>IApedia <span class="year">2025.</span></h1>
+          <p>
+            Explora las herramientas de inteligencia artificial más innovadoras
+          </p>
         </div>
-       
       </header>
 
       <div class="search-bar">
         <input
           type="text"
           class="search-input"
-          placeholder="Buscar herramientas en IApedia..."
+          placeholder="Buscar herramientas IA en IApedia..."
           id="searchInput"
         />
         <span class="search-icon"></span>
