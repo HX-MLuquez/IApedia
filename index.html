@@ -512,16 +512,22 @@
         .header h1 {
           font-size: 2.5rem;
         }
+        .header-content p {
+          display: none;
+        }
         .tools-grid {
           grid-template-columns: 1fr;
         }
         .filter-bar {
-          justify-content: flex-start;
+          justify-content: center;
           overflow-x: auto;
           padding-bottom: 10px;
         }
         .search-bar {
           margin: 0 auto 20px auto;
+        }
+        .footer-container {
+          padding: 0 1rem !important;
         }
       }
 
@@ -609,7 +615,17 @@
     </div>
     <footer class="footer">
       <div class="footer-container" style="text-align: center; padding: 20px 0">
-        <p>🚀 IAs 2025 - Todos los derechos reservados</p>
+        <div
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <img
+            src="public/iab.png"
+            alt="IApedia 2025 Logo"
+            style="width: 40px; height: 40px; border-radius: 50%; margin: 1rem"
+          />
+          <p>IApedia 2025 - Todos los derechos reservados</p>
+        </div>
+
         <a
           href="https://www.linkedin.com/in/mauricio-gast%C3%B3n-l%C3%BAquez-aaa78571/"
           class="author-info"
@@ -741,6 +757,19 @@
           link: "https://github.com/features/copilot",
         },
         {
+          name: "Cursor",
+          creator: "Cursor",
+          category: "texto",
+          type: "G",
+          reasoning: true,
+          pricing: "freemium",
+          description:
+            "Asistente de programación impulsado por IA, diseñado para mejorar la productividad de los desarrolladores.",
+          usage:
+            "Sugerencias de código, autocompletado inteligente, y asistencia en tiempo real.",
+          link: "https://cursor.so",
+        },
+        {
           name: "Perplexity AI",
           creator: "Perplexity",
           category: "texto",
@@ -818,7 +847,19 @@
             "Traducción de documentos profesionales donde la precisión es crítica.",
           link: "https://deepl.com",
         },
-
+        {
+          name: "OdysseyGPT",
+          creator: "Odyssey",
+          category: "texto",
+          type: "G",
+          reasoning: true,
+          pricing: "freemium",
+          description:
+            "Plataforma de generación de texto impulsada por IA, especializada en narrativa y contenido creativo.",
+          usage:
+            "Creación de historias, guiones, y contenido creativo de alta calidad.",
+          link: "https://odysseygpt.com",
+        },
         // Imagen
         {
           name: "Midjourney V6.1",
@@ -950,6 +991,19 @@
           link: "https://uizard.io",
         },
         {
+          name: "Magnific AI",
+          creator: "Magnific AI",
+          category: "imagen",
+          type: "G",
+          reasoning: false,
+          pricing: "freemium",
+          description:
+            "Plataforma de diseño gráfico impulsada por IA que ofrece herramientas avanzadas de edición y creación.",
+          usage:
+            "Diseño gráfico, creación de contenido visual, edición de imágenes.",
+          link: "https://magnific.ai",
+        },
+        {
           name: "WebWave",
           creator: "WebWave",
           category: "imagen",
@@ -1067,6 +1121,32 @@
             "Transcripción de entrevistas, subtitulado de videos, análisis de audio.",
           link: "https://openai.com/research/whisper",
         },
+        {
+          name: "Runway Gen-3",
+          creator: "Runway",
+          category: "video",
+          type: "G",
+          reasoning: false,
+          pricing: "freemium",
+          description:
+            "Más que un generador, es una suite de edición de video con IA para un control granular del movimiento y estilo.",
+          usage:
+            "Artistas visuales, cineastas, edición de video asistida por IA.",
+          link: "https://runwayml.com",
+        },
+        {
+          name: "KLING AI",
+          creator: "KLING",
+          category: "video",
+          type: "G",
+          reasoning: false,
+          pricing: "freemium",
+          description:
+            "Plataforma de creación de contenido de video impulsada por IA, con herramientas de edición avanzadas.",
+          usage:
+            "Creación de videos para redes sociales, marketing de contenido, y producción audiovisual.",
+          link: "https://kling.ai",
+        },
 
         // ML y Predictiva
         {
@@ -1132,7 +1212,7 @@
 
         const categories = {
           texto: { title: " Texto y Chat", tools: [] },
-          imagen: { title: "🎨 Imagen y Diseño", tools: [] },
+          imagen: { title: "🎨 Imagen, Diseño y Web", tools: [] },
           video: { title: "🎬 Video y Audio", tools: [] },
           ml: { title: "🤖 Machine Learning", tools: [] },
         };
