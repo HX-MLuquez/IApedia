@@ -21,6 +21,10 @@
         box-sizing: border-box;
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         font-family: "Playfair Display", Georgia, serif;
         background: linear-gradient(135deg, #0b1b85 0%, #105c0d 100%);
@@ -560,7 +564,8 @@
         <img
           src="public/iab.png"
           alt="IApedia 2025 Logo"
-          style="width: 80px; height: 80px; border-radius: 50%; margin: 1rem"
+          style="width: 80px; height: 80px; border-radius: 50%; margin: 1rem; cursor: pointer;"
+          onclick="location.reload();"
         />
         <div class="header-content">
           <h1>IApedia <span class="year">2025.</span></h1>
@@ -615,16 +620,24 @@
     </div>
     <footer class="footer">
       <div class="footer-container" style="text-align: center; padding: 20px 0">
-        <div
-          style="display: flex; align-items: center; justify-content: center"
-        >
-          <img
-            src="public/iab.png"
-            alt="IApedia 2025 Logo"
-            style="width: 40px; height: 40px; border-radius: 50%; margin: 1rem"
-          />
-          <p>IApedia 2025 - Todos los derechos reservados</p>
-        </div>
+        <a href="#" style="text-decoration: none">
+          <div
+            class="up"
+            style="display: flex; align-items: center; justify-content: center"
+          >
+            <img
+              src="public/iab.png"
+              alt="IApedia 2025 Logo"
+              style="
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin: 1rem;
+              "
+            />
+            <p>IApedia 2025 - Todos los derechos reservados</p>
+          </div>
+        </a>
 
         <a
           href="https://www.linkedin.com/in/mauricio-gast%C3%B3n-l%C3%BAquez-aaa78571/"
