@@ -522,10 +522,28 @@
         .tools-grid {
           grid-template-columns: 1fr;
         }
+
         .filter-bar {
-          justify-content: center;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: flex-start; /* mejor que center */
           overflow-x: auto;
-          padding-bottom: 10px;
+          padding-bottom: 4px;
+          margin-bottom: 4px;
+          -webkit-overflow-scrolling: touch; /* scroll suave en móviles */
+          scrollbar-width: none; /* Firefox: oculta scrollbar */
+        }
+
+        .filter-bar::-webkit-scrollbar {
+          display: none; /* Chrome/Safari: oculta scrollbar */
+        }
+        .filter-underline {
+          width: 40%;
+          height: 4px;
+          background: linear-gradient(90deg, #ffd700, #ffa500);
+          margin: 10px auto;
+          margin-bottom: 20px;
+          border-radius: 2px;
         }
         .search-bar {
           margin: 0 auto 20px auto;
@@ -564,7 +582,13 @@
         <img
           src="public/iab.png"
           alt="IApedia 2025 Logo"
-          style="width: 80px; height: 80px; border-radius: 50%; margin: 1rem; cursor: pointer;"
+          style="
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 1rem;
+            cursor: pointer;
+          "
           onclick="location.reload();"
         />
         <div class="header-content">
@@ -596,6 +620,7 @@
           🧠 Razonamiento
         </button>
       </div>
+      <div class="filter-underline"></div>
 
       <div class="stats-grid">
         <div class="stat-card">
